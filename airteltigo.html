@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirtelTigo Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AirtelTigo Data Bundles</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <section class="bundles">
+  <!-- AirtelTigo bundle -->
+    <div class="bundle airteltigo">
+<img src="C:\Users\ELORM\Desktop\Etornam\data website\airteltigo.jpg" alt="AirtelTigo logo">
+      <h3>AirtelTigo 1 GB</h3>
+      <p>GHS 6</p>
+      <button onclick="orderBundle('AirtelTigo 1GB', 6)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 2 GB</h3>
+      <p>GHS 11</p>
+      <button onclick="orderBundle('AirtelTigo 2GB', 11)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 3 GB</h3>
+      <p>GHS 16</p>
+      <button onclick="orderBundle('AirtelTigo 3GB', 16)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 4 GB</h3>
+      <p>GHS 20</p>
+      <button onclick="orderBundle('AirtelTigo 4GB', 20)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 5 GB</h3>
+      <p>GHS 24</p>
+      <button onclick="orderBundle('AirtelTigo 5GB', 24)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 6 GB</h3>
+      <p>GHS 36</p>
+      <button onclick="orderBundle('AirtelTigo 6GB', 36)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 8 GB</h3>
+      <p>GHS 50</p>
+      <button onclick="orderBundle('AirtelTigo 8GB', 50)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 9 GB</h3>
+      <p>GHS 55</p>
+      <button onclick="orderBundle('AirtelTigo 9GB', 55)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 10 GB</h3>
+      <p>GHS 60</p>
+      <button onclick="orderBundle('AirtelTigo 10GB', 60)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 11 GB</h3>
+      <p>GHS 65</p>
+      <button onclick="orderBundle('AirtelTigo 11GB', 65)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 12 GB</h3>
+      <p>GHS 70</p>
+      <button onclick="orderBundle('AirtelTigo 12GB', 70)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 13 GB</h3>
+      <p>GHS 75</p>
+      <button onclick="orderBundle('AirtelTigo 13GB', 75)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 14 GB</h3>
+      <p>GHS 80</p>
+      <button onclick="orderBundle('AirtelTigo 14GB', 80)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 15 GB</h3>
+      <p>GHS 90</p>
+      <button onclick="orderBundle('AirtelTigo 15GB', 90)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 20 GB</h3>
+      <p>GHS  100</p>
+      <button onclick="orderBundle('AirtelTigo 20GB', 100)">Buy Now</button>
+    </div>
+<div class="bundle airteltigo">
+      <h3>AirtelTigo 25 GB</h3>
+      <p>GHS  130</p>
+      <button onclick="orderBundle('AirtelTigo 25GB',  130)">Buy Now</button>
+    </div>
+
+  </section>
+
+  <script>
+    const myWhatsApp = '233268366232';
+    function orderBundle(bundle, price){
+      const msg = encodeURIComponent(`Hello, I would like to buy the ${bundle} bundle for GHS ${price}.`);
+      window.open(`https://wa.me/${myWhatsApp}?text=${msg}`,'_blank');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telecel Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Telecel Data Bundles</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <section class="bundles">
+    <div class="bundle Telecel">
+<img src="C:\Users\ELORM\Desktop\Etornam\data website\telecel.jpg" alt="Telecel logo">
+      <h3>Telecel 5 GB</h3>
+      <p>GHS 28</p>
+      <button onclick="orderBundle('Telecel 5GB', 28)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 10 GB</h3>
+      <p>GHS 50</p>
+      <button onclick="orderBundle('Telecel 10GB', 50)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 15 GB</h3>
+      <p>GHS 50</p>
+      <button onclick="orderBundle('Telecel 15GB', 80)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 20 GB</h3>
+      <p>GHS 100</p>
+      <button onclick="orderBundle('Telecel 20GB', 100)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 30 GB</h3>
+      <p>GHS 140</p>
+      <button onclick="orderBundle('Telecel 30GB', 140)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 40 GB</h3>
+      <p>GHS 190</p>
+      <button onclick="orderBundle('Telecel 40GB', 190)">Buy Now</button>
+    </div>
+<div class="bundle Telecel">
+      <h3>Telecel 50 GB</h3>
+      <p>GHS 240</p>
+      <button onclick="orderBundle('Telecel 50GB', 240)">Buy Now</button>
+    </div>
+  </section>
+
+  <script>
+    const myWhatsApp = '233268366232';
+    function orderBundle(bundle, price){
+      const msg = encodeURIComponent(`Hello, I would like to buy the ${bundle} bundle for GHS ${price}.`);
+      window.open(`https://wa.me/${myWhatsApp}?text=${msg}`,'_blank');
+    }
+  </script>
+</body>
+</html>

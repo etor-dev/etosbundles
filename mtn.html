@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MTN Bundles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MTN Data Bundles</h1>
+    <a href="index.html">Back to Home</a>
+  </header>
+
+  <section class="bundles">
+    <!-- MTN bundle -->
+    <div class="bundle mtn">
+ <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/New-mtn-logo.jpg" alt="MTN logo">
+      <h3>MTN 1 GB</h3>
+      <p>GHS 6</p>
+      <button onclick="orderBundle('MTN 1GB', 6)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>2 GB</h3>
+      <p>GHS 11</p>
+      <button onclick="orderBundle('MTN 2GB', 11)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>3 GB</h3>
+      <p>GHS 16</p>
+      <button onclick="orderBundle('MTN 3GB', 16)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>4 GB</h3>
+      <p>GHS 23</p>
+      <button onclick="orderBundle('MTN 4GB', 23)">Buy Now</button>
+    </div>
+    <div class="bundle mtn">
+      <h3>5 GB</h3>
+      <p>GHS 28</p>
+      <button onclick="orderBundle('MTN 5GB', 28)">Buy Now</button>
+    </div>
+    <div class="bundle mtn">
+      <h3>6 GB</h3>
+      <p>GHS 33</p>
+      <button onclick="orderBundle('MTN 6GB', 33)">Buy Now</button>
+    </div>
+  <div class="bundle mtn">
+      <h3>MTN 8 GB</h3>
+      <p>GHS 405</p>
+      <button onclick="orderBundle('MTN 8GB', 40)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>10 GB</h3>
+      <p>GHS 53</p>
+      <button onclick="orderBundle('MTN 10GB', 53)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>15 GB</h3>
+      <p>GHS 75</p>
+      <button onclick="orderBundle('MTN 15GB', 75)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>20 GB</h3>
+      <p>GHS 95</p>
+      <button onclick="orderBundle('MTN 20GB', 95)">Buy Now</button>
+    </div>
+    <div class="bundle mtn">
+      <h3>25 GB</h3>
+      <p>GHS 120</p>
+      <button onclick="orderBundle('MTN 25GB', 120)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>30 GB</h3>
+      <p>GHS 140</p>
+      <button onclick="orderBundle('MTN 30GB', 140)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>40 GB</h3>
+      <p>GHS 200</p>
+      <button onclick="orderBundle('MTN 40GB', 200)">Buy Now</button>
+    </div>
+<div class="bundle mtn">
+      <h3>50 GB</h3>
+      <p>GHS 220</p>
+      <button onclick="orderBundle('MTN 50GB', 220)">Buy Now</button>
+    </div>
+    <div class="bundle mtn">
+      <h3>100 GB</h3>
+      <p>GHS 440</p>
+      <button onclick="orderBundle('MTN 100GB', 440)">Buy Now</button>
+    </div>
+
+  </section>
+
+  <script>
+    const myWhatsApp = '233268366232';
+    function orderBundle(bundle, price){
+      const msg = encodeURIComponent(`Hello, I would like to buy the ${bundle} bundle for GHS ${price}.`);
+      window.open(`https://wa.me/${myWhatsApp}?text=${msg}`,'_blank');
+    }
+  </script>
+</body>
+</html>
